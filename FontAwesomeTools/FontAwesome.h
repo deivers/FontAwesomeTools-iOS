@@ -24,6 +24,10 @@
                      size:(CGFloat)size
                     color:(UIColor*)color;
 
+/*  Convenience method to get a custom font.
+ */
++ (UIFont*)fontNamed:(NSString*)font withSize:(CGFloat)size;
+
 
 //================================
 // Image Methods
@@ -41,5 +45,14 @@
                 iconColor:(UIColor*)color
                  iconSize:(CGFloat)iconSize
                 imageSize:(CGSize)imageSize;
+
+/* The image and the icon inside it can be from a custom font:
+ */
++ (UIImage*)imageWithFontNamed:(NSString*)font
+                          icon:(NSString*)fa_icon
+                     iconColor:(UIColor*)iconColor
+                      iconSize:(CGFloat)iconSize
+                     imageSize:(CGSize)imageSize;
+
 
 @end
