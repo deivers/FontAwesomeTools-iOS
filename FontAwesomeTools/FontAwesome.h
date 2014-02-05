@@ -18,15 +18,15 @@
  */
 + (UIFont*)fontWithSize:(CGFloat)size;
 
+/*  Convenience method to get a custom font.
+ */
++ (UIFont*)fontNamed:(NSString*)font withSize:(CGFloat)size;
+
 /*  Convenience method to make a sized-to-fit UILabel containing an icon in the given font size and color.
  */
 + (UILabel*)labelWithIcon:(NSString*)fa_icon
                      size:(CGFloat)size
                     color:(UIColor*)color;
-
-/*  Convenience method to get a custom font.
- */
-+ (UIFont*)fontNamed:(NSString*)font withSize:(CGFloat)size;
 
 
 //================================
@@ -48,11 +48,11 @@
 
 /* The image and the icon inside it can be from a custom font:
  */
-+ (UIImage*)imageWithFontNamed:(NSString*)font
-                          icon:(NSString*)fa_icon
-                     iconColor:(UIColor*)iconColor
-                      iconSize:(CGFloat)iconSize
-                     imageSize:(CGSize)imageSize;
++ (UIImage*)imageWithText:(NSString*)characterCodeString
+                     font:(NSString*)font
+                iconColor:(UIColor*)iconColor
+                 iconSize:(CGFloat)iconSize
+                imageSize:(CGSize)imageSize;
 
 
 @end
